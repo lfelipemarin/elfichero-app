@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Find our drawer view
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         // Find our drawer view
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
         drawerToggle = setupDrawerToggle();

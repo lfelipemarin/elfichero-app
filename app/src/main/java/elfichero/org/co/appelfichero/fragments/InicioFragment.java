@@ -2,9 +2,11 @@ package elfichero.org.co.appelfichero.fragments;
 
 
 import android.content.res.Resources;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -64,9 +66,12 @@ public class InicioFragment extends ListFragment {
 
             // Insert the fragment by replacing any existing fragment
 
-            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.flContent, fragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
 
-            fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
         }
 
         // do something
