@@ -24,6 +24,7 @@ import elfichero.org.co.appelfichero.R;
  * A simple {@link Fragment} subclass.
  */
 public class InicioFragment extends ListFragment {
+    FragmentManager fragmentManager;
     private List<ListViewItem> mItems;        // ListView items list
 
     @Override
@@ -36,6 +37,9 @@ public class InicioFragment extends ListFragment {
 
         mItems.add(new ListViewItem(resources.getDrawable(R.drawable.news1ico), "Noticias1", "Descripcion 1"));
         mItems.add(new ListViewItem(resources.getDrawable(R.drawable.news2ico), "Noticias2", "Descripcion 2"));
+        mItems.add(new ListViewItem(resources.getDrawable(R.drawable.news4ico), "Noticias3", "Descripcion 3"));
+        mItems.add(new ListViewItem(resources.getDrawable(R.drawable.news3ico), "Noticias4", "Descripcion 4"));
+        mItems.add(new ListViewItem(resources.getDrawable(R.drawable.news7ico), "Noticias5", "Descripcion 5"));
 
         // initialize and set the list adapter
         setListAdapter(new ListArrayAdapter(getActivity(), mItems));
@@ -53,24 +57,104 @@ public class InicioFragment extends ListFragment {
         // retrieve theListView item
         ListViewItem item = mItems.get(position);
 
-        if (position == 0) {
-            Fragment fragment = null;
-            Class fragmentClass;
-            fragmentClass = ActualidadFragment.class;
-            try {
-                fragment = (Fragment) fragmentClass.newInstance();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        switch (position){
+            case 0:
+                Fragment fragment = null;
+                Class fragmentClass;
+                fragmentClass = ActualidadFragment.class;
+                try {
+                    fragment = (Fragment) fragmentClass.newInstance();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
 
-            // Insert the fragment by replacing any existing fragment
+                // Insert the fragment by replacing any existing fragment
 
-            FragmentManager fragmentManager = getFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.flContent, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
+                fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                break;
+            case 1:
+                fragment = null;
+                //Class fragmentClass;
+                fragmentClass = OpinionFragment.class;
+                try {
+                    fragment = (Fragment) fragmentClass.newInstance();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+                // Insert the fragment by replacing any existing fragment
+
+                fragmentManager = getFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                break;
+            case 2:
+                fragment = null;
+                //Class fragmentClass;
+                fragmentClass = GeneroFragment.class;
+                try {
+                    fragment = (Fragment) fragmentClass.newInstance();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+                // Insert the fragment by replacing any existing fragment
+
+                fragmentManager = getFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                break;
+            case 3:
+                fragment = null;
+                //Class fragmentClass;
+                fragmentClass = CulturaFragment.class;
+                try {
+                    fragment = (Fragment) fragmentClass.newInstance();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+                // Insert the fragment by replacing any existing fragment
+
+                fragmentManager = getFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                break;
+            case 4:
+                fragment = null;
+                //Class fragmentClass;
+                fragmentClass = TecnologiaFragment.class;
+                try {
+                    fragment = (Fragment) fragmentClass.newInstance();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+                // Insert the fragment by replacing any existing fragment
+
+                fragmentManager = getFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.flContent, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                break;
+            default:
+                break;
 
         }
 

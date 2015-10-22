@@ -1,5 +1,6 @@
 package elfichero.org.co.appelfichero.activities;
 
+import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.support.design.widget.NavigationView;
 import android.support.v7.app.ActionBarDrawerToggle;
