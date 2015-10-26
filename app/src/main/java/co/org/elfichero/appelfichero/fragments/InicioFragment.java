@@ -1,23 +1,21 @@
-package elfichero.org.co.appelfichero.fragments;
+package co.org.elfichero.appelfichero.fragments;
 
 
 import android.content.res.Resources;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import elfichero.org.co.appelfichero.ListArrayAdapter;
-import elfichero.org.co.appelfichero.ListViewItem;
+import co.org.elfichero.appelfichero.ListArrayAdapter;
+import co.org.elfichero.appelfichero.ListViewItem;
 import elfichero.org.co.appelfichero.R;
 
 /**

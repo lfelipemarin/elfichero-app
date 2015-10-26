@@ -1,12 +1,10 @@
-package elfichero.org.co.appelfichero.activities;
+package co.org.elfichero.appelfichero.activities;
 
-import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.support.design.widget.NavigationView;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -14,17 +12,14 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
 import elfichero.org.co.appelfichero.R;
-import elfichero.org.co.appelfichero.fragments.ActualidadFragment;
-import elfichero.org.co.appelfichero.fragments.CulturaFragment;
-import elfichero.org.co.appelfichero.fragments.GeneroFragment;
-import elfichero.org.co.appelfichero.fragments.InicioFragment;
-import elfichero.org.co.appelfichero.fragments.OpinionFragment;
-import elfichero.org.co.appelfichero.fragments.TecnologiaFragment;
+import co.org.elfichero.appelfichero.fragments.ActualidadFragment;
+import co.org.elfichero.appelfichero.fragments.CulturaFragment;
+import co.org.elfichero.appelfichero.fragments.GeneroFragment;
+import co.org.elfichero.appelfichero.fragments.InicioFragment;
+import co.org.elfichero.appelfichero.fragments.OpinionFragment;
+import co.org.elfichero.appelfichero.fragments.TecnologiaFragment;
 
 public class MainActivity extends AppCompatActivity {
 

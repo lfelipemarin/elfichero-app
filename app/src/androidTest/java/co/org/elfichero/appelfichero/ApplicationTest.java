@@ -1,4 +1,4 @@
-package elfichero.org.co.appelfichero;
+package co.org.elfichero.appelfichero;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

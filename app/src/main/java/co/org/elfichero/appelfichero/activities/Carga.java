@@ -1,4 +1,4 @@
-package elfichero.org.co.appelfichero.activities;
+package co.org.elfichero.appelfichero.activities;
 
 import android.app.Activity;
 import android.content.Intent;

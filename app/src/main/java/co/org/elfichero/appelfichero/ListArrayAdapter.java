@@ -1,4 +1,4 @@
-package elfichero.org.co.appelfichero;
+package co.org.elfichero.appelfichero;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
+
+import elfichero.org.co.appelfichero.R;
 
 /**
  * Created by felipe on 3/10/15.
