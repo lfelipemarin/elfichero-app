@@ -23,7 +23,7 @@ public class NoticiasProvider extends ContentProvider {
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         String where;
         switch (sURIMatcher.match(uri)){
-            case NoticiasContract.STATUS_DIR: // Se eliminarán cvaros registros
+            case NoticiasContract.STATUS_DIR: // Se eliminarán varios registros
                 where = (selection == null) ? "1" : selection;
                 break;
             case NoticiasContract.STATUS_ITEM:// Se eliminará un solo registro

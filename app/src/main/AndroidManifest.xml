@@ -25,6 +25,11 @@
             android:enabled="true"
             android:exported="false" >
         </provider>
+
+        <service
+            android:name="co.org.elfichero.appelfichero.fragments.RefreshService"
+            android:exported="false" >
+        </service>
     </application>
 
 </manifest>
